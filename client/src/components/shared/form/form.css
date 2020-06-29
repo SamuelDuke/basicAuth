@@ -1,0 +1,30 @@
+.Form {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.Form-Header {
+    font-weight: bolder;
+    font-size: x-large;
+    margin: 15px 5px 15px 5px;
+}
+
+.Form-Inputs  {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: right;
+
+}
+
+.Form-Button {
+    padding:5px 15px; 
+    background:#ccc; 
+    border:0 none;
+    cursor:pointer;
+   
+    border-radius: 5px; 
+    
+}
+

@@ -1,8 +1,9 @@
 import React from 'react';
 
+import auth from '../../auth';
 const ProtectedPage = props => {
     return (
-        <div>Must be logged in to view!</div>
+        <div>{auth.name} Must be logged in to view!</div>
     )
 };
 

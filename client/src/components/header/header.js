@@ -21,7 +21,7 @@ const Header = props => {
             <li><Link to="/">Home</Link></li>
             {loggedIn ? (
                 <React.Fragment>
-                     <li><Link to="/protected">Protected</Link></li>
+                     <li><Link to="/protected">Protected for {auth.name}</Link></li>
                     <li onClick={handelLogoutClick}><a>Logout</a></li>
                 </React.Fragment>
             ) : (

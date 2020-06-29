@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { Route, BrowserRouter as Router } from "react-router-dom";
-import ProtectedRoute from '../protectedRoute';
+import ProtectedRoute from '../shared/protectedRoute';
 
 import auth from '../../auth';
 
 import Header from "../header";
 import Home from "../home";
 import Register from "../register";
-import Login from "../login";
+import LoginPage from "../loginPage";
 import Logout from "../logout";
 
 import ProtectedPage from '../protectedPage';
@@ -25,7 +25,7 @@ export default App => {
           <Route path="/Register" component={Register} />
           <Route 
             path="/login"
-            render={props => <Login {...props} setLoggedIn={setLoggedIn} />} 
+            render={props => <LoginPage {...props} setLoggedIn={setLoggedIn} />} 
           />
 
           <Route 
